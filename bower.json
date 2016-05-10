@@ -1,0 +1,22 @@
+{
+  "name": "snow",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "FranciZ <franci@proxima.si>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gsap": "greensock#^1.18.4",
+    "jquery": "^2.2.3",
+    "EaselJS": "^0.8.2"
+  }
+}
