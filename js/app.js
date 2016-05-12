@@ -7,10 +7,10 @@ var app = {
     particleArray   : [],
     stage           : null,
     wind            :{
-        max:400,
+        max:1,
         min:0,
         direction:'both',
-        force:200
+        force:Math.random()-0.5
     },
 
     init: function(){
@@ -22,7 +22,7 @@ var app = {
 
         setInterval(function(){
 
-            console.log(app.wind.force);
+            //console.log(app.wind.force);
 
         },100);
 
@@ -30,9 +30,9 @@ var app = {
 
     randomWind:function(){
 
-        var nWind = Math.random()*(app.wind.max*2-app.wind.min)-app.wind.min-app.wind.max;
+        var nWind = Math.random()-0.5;
 
-        TweenLite.to(app.wind, Math.random()*3+1,
+        TweenLite.to(app.wind, Math.random()*3+2,
             {
                 force:nWind,
                 delay:Math.random()+1,
